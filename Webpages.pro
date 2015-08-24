@@ -1,4 +1,3 @@
 DISTFILES += \
     index.html \
-    jmsk-screenshot-win.png \
-    index.html.shtml
+    jmsk-screenshot-win.png
