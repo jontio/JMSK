@@ -416,7 +416,7 @@ qint64 MskDemodulator::writeData(const char *data, qint64 len)
             tixd.clear();
             for(int k=0;;k++)
             {
-                int tval=round(symboltimingstartest+((double)k)*2.0*SamplesPerSymbol);
+                int tval=round(symboltimingstartest+((double)(k-1))*2.0*SamplesPerSymbol);
                 if(tval>=sigbuff.size())break;
                 if((tval>=0)&&(tval<sigbuff.size())&&((tval-lastindex)>=SamplesPerSymbol))
                 {
