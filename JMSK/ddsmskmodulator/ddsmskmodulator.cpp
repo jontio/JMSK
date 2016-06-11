@@ -16,7 +16,7 @@ DDSMSKModulator::DDSMSKModulator(QObject *parent)
 void DDSMSKModulator::TimeoutSlot()
 {
     if(noresponcecount<100)noresponcecount++;
-    if(noresponcecount>2)WarningMsg("No responce from JDDS device");
+    if(noresponcecount>2)WarningMsg("No response from JDDS device");
     JDDSTimeout->stop();
     stop();
 }

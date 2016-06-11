@@ -36,7 +36,7 @@ bool SerialPPT::setportname(QString portname)
         emit Warning("Can not open serial port \""+pserialport.data()->portName()+"\"");
         return false;
     }
-    //some ports seem to not turn off initally. problem. please fix!!
+    //some ports seem to not turn off initially. problem. please fix!!
     setPPTon();
     setPPToff();
 

@@ -318,7 +318,7 @@
   - QCPAxis::setLabelColor and setTickLabelColor
   - QCustomPlot::setTitleColor
   - QCustomPlot now emits beforeReplot and afterReplot signals. Note that it is safe to make two customPlots mutually call eachothers replot functions
-    in one of these slots, it will not cause an infinite loop. (usefull for synchronizing axes ranges between two customPlots, because setRange alone doesn't replot)
+    in one of these slots, it will not cause an infinite loop. (useful for synchronizing axes ranges between two customPlots, because setRange alone doesn't replot)
   - If the Qt version is 4.7 or greater, the tick label strings in date-time-mode now support sub-second accuracy (e.g. with format like "hh:mm:ss.zzz").
 
   Bugfixes:
