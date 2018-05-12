@@ -1681,7 +1681,7 @@ void QCPMarginGroup::removeChild(QCP::MarginSide side, QCPLayoutElement *element
 /*! \fn QRect QCPLayoutElement::rect() const
   
   Returns the inner rect of this layout element. The inner rect is the outer rect (\ref
-  setOuterRect) shrinked by the margins (\ref setMargins, \ref setAutoMargins).
+  setOuterRect) shrunk by the margins (\ref setMargins, \ref setAutoMargins).
   
   In some cases, the area between outer and inner rect is left blank. In other cases the margin
   area is used to display peripheral graphics while the main content is in the inner rect. This is
@@ -20166,7 +20166,7 @@ void QCPColorMap::setGradient(const QCPColorGradient &gradient)
 
 /*!
   Sets whether the color map image shall use bicubic interpolation when displaying the color map
-  shrinked or expanded, and not at a 1:1 pixel-to-data scale.
+  shrunk or expanded, and not at a 1:1 pixel-to-data scale.
   
   \image html QCPColorMap-interpolate.png "A 10*10 color map, with interpolation and without interpolation enabled"
 */

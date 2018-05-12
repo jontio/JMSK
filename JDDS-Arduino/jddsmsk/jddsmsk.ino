@@ -232,7 +232,7 @@ void loop()
     slip.sendpacket(c,2);
     digitalWrite(led, LOW);
   }
-   else if((ad_on)&&(!bufferlow_msg_sent_lock)&&(symbolbufferavailable()>=minfreespacebeforereq))//if buffer is low ask for more data and wait for a responce.
+   else if((ad_on)&&(!bufferlow_msg_sent_lock)&&(symbolbufferavailable()>=minfreespacebeforereq))//if buffer is low ask for more data and wait for a response.
    {
      uchar c[2];
      c[0]=JPKT_REQ;

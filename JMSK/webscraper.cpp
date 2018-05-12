@@ -93,7 +93,7 @@ void WebScraper::scrape(int index)
 
     //qDebug()<<"scrape(int index)=="<<index;
     ScrapeItem scrapeitem=scrapemap.values().at(index);//get this scrape item
-    UrlItem urlitem=urlmap.value(scrapeitem.url);//get url refering to this scrape item
+    UrlItem urlitem=urlmap.value(scrapeitem.url);//get url referring to this scrape item
 
     if(!urlitem.lastvisited.isNull())
     {
@@ -171,7 +171,7 @@ void WebScraper::replyFinished(QNetworkReply *reply)
     }
 
     ScrapeItem scrapeitem=scrapemap.values().at(currentscrapeitemindex);//get this scrape item
-    UrlItem urlitem=urlmap.value(scrapeitem.url);//get url refering to this scrape item
+    UrlItem urlitem=urlmap.value(scrapeitem.url);//get url referring to this scrape item
 
     qDebug()<<"got"<<scrapeitem.url<<"page.";
 
