@@ -288,10 +288,10 @@ void MainWindow::AboutSlot()
 {
     QMessageBox::about(this,"JMSK",""
                                      "<H1>An MSK/GMSK modem</H1>"
-                                     "<H3>v1.1.0</H3>"
+                                     "<H3>v1.1.2</H3>"
                                      "<p>This is a program to modulate and or demodulate varicode encoded differentially encoded MSK or GMSK.</p>"
                                      "<p>For more information about this application see <a href=\"http://jontio.zapto.org/hda1/jmsk.html\">http://jontio.zapto.org/hda1/jmsk.html</a>.</p>"
-                                     "<p>Jonti 2015</p>" );
+                                     "<p>Jonti 2018</p>" );
 }
 
 void MainWindow::on_comboBoxbps_currentIndexChanged(const QString &arg1)
@@ -301,7 +301,9 @@ void MainWindow::on_comboBoxbps_currentIndexChanged(const QString &arg1)
     audiomskdemodulatorsettings.fb=arg1.split(" ")[0].toDouble();
     audiomskdemodulatorsettings.Fs=8000;
     if(audiomskdemodulatorsettings.fb==50)audiomskdemodulatorsettings.symbolspercycle=8;
+    if(audiomskdemodulatorsettings.fb==100)audiomskdemodulatorsettings.symbolspercycle=16;
     if(audiomskdemodulatorsettings.fb==125)audiomskdemodulatorsettings.symbolspercycle=16;
+    if(audiomskdemodulatorsettings.fb==200)audiomskdemodulatorsettings.symbolspercycle=16;
     if(audiomskdemodulatorsettings.fb==250)audiomskdemodulatorsettings.symbolspercycle=16;
     if(audiomskdemodulatorsettings.fb==500)audiomskdemodulatorsettings.symbolspercycle=24;
     if(audiomskdemodulatorsettings.fb==1000)audiomskdemodulatorsettings.symbolspercycle=24;
